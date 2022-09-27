@@ -16,6 +16,7 @@
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Partition attributes
 ifneq ($(WITH_GAPPS),true)
