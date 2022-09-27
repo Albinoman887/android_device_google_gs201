@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Partition attributes
 ifneq ($(WITH_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
