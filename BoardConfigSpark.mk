@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+
 # Partition attributes
 ifneq ($(WITH_GAPPS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
