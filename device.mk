@@ -540,8 +540,8 @@ PRODUCT_PACKAGES += \
         ConnectivityOverlay
 
 # Battery Mitigation
-PRODUCT_PACKAGES += \
-        battery_mitigation
+##PRODUCT_PACKAGES += \
+  ##      battery_mitigation
 
 PRODUCT_PACKAGES_DEBUG += \
 	sg_write_buffer \
