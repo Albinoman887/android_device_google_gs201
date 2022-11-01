@@ -279,7 +279,7 @@ BOARD_USES_DT := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Manifests
-DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += $(LOCAL_PATH)/lineage_compatibility_matrix.xml
+DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs201/lineage_compatibility_matrix.xml
 
 # PLATFORM LOG
 TARGET_USES_LOGD := true
