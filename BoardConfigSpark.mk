@@ -15,13 +15,8 @@
 #
 
 # Kernel
-#TARGET_NO_KERNEL_OVERRIDE := true
+TARGET_NO_KERNEL_OVERRIDE := true
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
-BOARD_KERNEL_IMAGE_NAME := Image.lz4
-TARGET_KERNEL_CONFIG := cloudripper_gki_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
-TARGET_NEEDS_DTBOIMAGE := true
 
 # Partition attributes
 ifneq ($(WITH_GAPPS),true)
