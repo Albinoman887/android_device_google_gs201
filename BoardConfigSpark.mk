@@ -15,14 +15,8 @@
 #
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.lz4
-TARGET_KERNEL_CONFIG := cloudripper_gki_defconfig
+TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := kernel/google/gs201/private/gs-google
-TARGET_NEEDS_DTBOIMAGE := true
-
-# Kernel modules
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := device/google/gs201/vendor_dlkm.modules.blocklist
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/google/gs201/private/google-modules
 
 # Partition attributes
 ifneq ($(WITH_GAPPS),true)
