@@ -15,5 +15,7 @@ PRODUCT_PACKAGES += \
 	scd \
 	android.hardware.gnss@2.1-service-brcm
 
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES_DEBUG += \
 	init.gps_log.rc
+endif
