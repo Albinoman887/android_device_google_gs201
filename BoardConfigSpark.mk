@@ -16,6 +16,7 @@
 
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/google/gs201/private/gs-google
 
 # Partition attributes
