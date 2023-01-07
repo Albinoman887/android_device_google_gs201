@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
 # Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
 PRODUCT_PACKAGES += \
     FaceEnrollOverlay \
     FaceEnrollSettingsOverlay
