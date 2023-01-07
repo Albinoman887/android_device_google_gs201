@@ -15,11 +15,12 @@
 #
 
 # Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_KERNEL_SOURCE := kernel/google/gs201/private/gs-google
 
 # Partition attributes
-ifneq ($(WITH_GAPPS),true)
+ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 614400000
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
