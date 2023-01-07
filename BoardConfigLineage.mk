@@ -11,7 +11,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.lz4
 TARGET_KERNEL_CONFIG := cloudripper_gki_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/gs201/private/gs-google
 TARGET_NEEDS_DTBOIMAGE := true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := device/google/gs201/vendor_dlkm.modules.blocklist
