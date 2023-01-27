@@ -23,6 +23,15 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
+PRODUCT_PACKAGES += \
+    FaceEnrollSettingsOverlay \
+    FaceEnrollOverlay
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.biometrics.face.xml
+
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
