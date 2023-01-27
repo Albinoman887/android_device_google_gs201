@@ -23,6 +23,12 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
+PRODUCT_PACKAGES += \
+    FaceEnrollSettingsOverlay \
+    FaceEnrollOverlay
+
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
