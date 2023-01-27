@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 android_library {
-    name: "FaceUnlockSettingsOverlay-core",
+    name: "FaceEnrollSettingsOverlay-core",
     platform_apis: true,
 
     srcs: ["src/**/*.java"],
@@ -16,7 +16,7 @@ android_library {
 }
 
 android_app {
-    name: "FaceUnlockSettingsOverlay",
+    name: "FaceEnrollSettingsOverlay",
     defaults: ["platform_app_defaults"],
     platform_apis: true,
     certificate: "platform",
@@ -27,7 +27,7 @@ android_app {
         "settings-platform-compat-config",
         "SettingsIntelligenceGooglePrebuilt",
     ],
-    static_libs: ["FaceUnlockSettingsOverlay-core"],
+    static_libs: ["FaceEnrollSettingsOverlay-core"],
     uses_libs: ["org.apache.http.legacy"],
     optional_uses_libs: [
         "androidx.window.extensions",

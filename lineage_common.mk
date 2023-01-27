@@ -26,8 +26,8 @@ PRODUCT_PACKAGES += \
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 PRODUCT_PACKAGES += \
-    FaceUnlockSettingsOverlay \
-    FutureFaceEnrollOverlay
+    FaceEnrollSettingsOverlay \
+    FaceEnrollOverlay
 
 # Parts
 PRODUCT_PACKAGES += \

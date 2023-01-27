@@ -5,8 +5,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  <string name="config_face_enroll_traffic_light_package">com.google.android.settings.future.biometrics.faceenroll</string>
-
     <!-- Biometrics -->
   <string name="biometrics_unlock_set_unlock_password">Password • Fingerprint • Face</string>
   <string name="biometrics_unlock_set_unlock_pattern">Pattern • Fingerprint • Face</string>
