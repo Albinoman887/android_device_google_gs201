@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-evolution
+DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-spark
 
 # AiAi Config
 PRODUCT_COPY_FILES += \
@@ -36,5 +36,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
-# Touch
-include hardware/google/pixel/touch/device.mk
