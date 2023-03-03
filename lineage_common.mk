@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
 
+# Disable CSI checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
