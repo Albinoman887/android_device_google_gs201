@@ -22,6 +22,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
     ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := false
+PRODUCT_PACKAGES += \
+    FaceEnrollSettingsOverlay \
+    FaceEnrollOverlay
+
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
