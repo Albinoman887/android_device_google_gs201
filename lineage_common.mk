@@ -17,12 +17,6 @@ PRODUCT_COPY_FILES += \
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-    
-# Quick Tap
-PRODUCT_COPY_FILES += \
-    device/google/gs201/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.columbus.use_ap_sensor=false
 
 # Disable CSI checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
@@ -51,6 +45,12 @@ PRODUCT_PACKAGES += \
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
+
+# Quick Tap
+PRODUCT_COPY_FILES += \
+    device/google/gs201/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.columbus.use_ap_sensor=false
 
 # Touch
 include hardware/google/pixel/touch/device.mk
