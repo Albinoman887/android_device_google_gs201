@@ -4,4 +4,7 @@ binder_call(system_server, hal_camera_default);
 binder_call(system_server, gpsd);
 
 # pixelstats_vendor/OrientationCollector
-binder_call(system_server, pixelstats_vendor);
+binder_call(system_server, pixelstats_vendor)
+
+# audit2allow
+allow system_server proc_irq:dir search;
