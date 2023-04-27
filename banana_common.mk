@@ -48,6 +48,3 @@ include hardware/google/pixel/lineage_health/device.mk
 # Parts
 PRODUCT_PACKAGES += \
     GoogleParts
-
-# Touch
-include hardware/google/pixel/touch/device.mk
