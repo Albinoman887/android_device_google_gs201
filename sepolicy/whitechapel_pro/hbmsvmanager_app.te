@@ -12,6 +12,3 @@ binder_call(hbmsvmanager_app, hal_graphics_composer_default)
 allow hbmsvmanager_app app_api_service:service_manager find;
 
 allow hbmsvmanager_app cameraserver_service:service_manager find;
-
-#============= hbmsvmanager_app ==============
-allow hbmsvmanager_app camera2_exported_camera_prop:file { read open };
