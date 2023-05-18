@@ -17,7 +17,7 @@ BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := device/google/gs201/vendor_dlkm.mo
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/google/gs201/private/google-modules
 
 # Manifests
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/banana/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += \
     device/google/gs201/android.hardware.security.rkp-service.citadel.xml \
     device/google/gs201/manifest_radio_ds.xml
@@ -42,7 +42,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_vendor
 
 # Partition attributes
-ifneq ($(WITH_GAPPS),true)
+ifeq ($(filter $(GAPPS_BUILD_TYPE),1 2),)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 614400000
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
