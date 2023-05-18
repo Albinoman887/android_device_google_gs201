@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-banana
+DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-lineage
 
 # Adaptive charging
 PRODUCT_COPY_FILES += \
