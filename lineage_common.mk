@@ -44,9 +44,11 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
-# Parts
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    GoogleParts
+    GoogleParts \
+    EuiccSupportPixelOverlay \
+    NowPlayingOverlay
 
 # Touch
 include hardware/google/pixel/touch/device.mk
