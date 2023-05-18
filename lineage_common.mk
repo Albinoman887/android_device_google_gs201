@@ -41,16 +41,14 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
-# EUICC
-PRODUCT_PACKAGES += \
-    EuiccSupportPixelOverlay
-
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
-# Parts
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    GoogleParts
+    GoogleParts \
+    EuiccSupportPixelOverlay \
+    NowPlayingOverlay
 
 # Touch
 include hardware/google/pixel/touch/device.mk
