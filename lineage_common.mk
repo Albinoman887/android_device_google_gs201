@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-banana
+DEVICE_PACKAGE_OVERLAYS += device/google/gs201/overlay-lineage
 
 # Adaptive charging
 PRODUCT_COPY_FILES += \
@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-    
+
 # Quick Tap
 PRODUCT_COPY_FILES += \
     device/google/gs201/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
@@ -49,5 +49,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleParts
 
-# Touch
-include hardware/google/pixel/touch/device.mk
+# Build Lineage Touch HAL if it exists
+-include hardware/google/pixel/touch/device.mk
