@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2022 The LineageOS Project
+<!-- Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,7 +13,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <config>
+    <!-- Private compute services must have network access to support Android system intelligence -->
+    <allow-in-power-save-except-idle package="com.google.android.as.oss" />
+
     <!-- Specify the explicit set of other applications that AI services are allowed to
          interact with, including the providers that back the implementation of the APIs
          provided by the package. -->
@@ -23,6 +27,7 @@
     <allow-association target="com.google.android.as" allowed="com.android.providers.media" />
     <allow-association target="com.google.android.as" allowed="com.android.providers.telephony" />
     <allow-association target="com.google.android.as" allowed="com.android.systemui" />
+    <allow-association target="com.google.android.as" allowed="com.google.android.providers.media.module" />
     <!-- AI services can bind to its open-source network component. -->
     <allow-association target="com.google.android.as" allowed="com.google.android.as.oss" />
 
