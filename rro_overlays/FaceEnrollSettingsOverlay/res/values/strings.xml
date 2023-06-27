@@ -97,5 +97,4 @@
     <string name="security_settings_face_settings_require_confirmation">Always require confirmation</string>
     <string name="security_settings_face_settings_require_confirmation_details">When using Face Unlock in apps, always require confirmation step</string>
     <string name="security_settings_face_settings_use_face_category">Use Face Unlock for</string>
-
 </resources>
