@@ -8,5 +8,4 @@
     <item>12</item>
     <item>17</item>
   </integer-array>
-  <integer name="config_face_enroll_supported_posture">0</integer>
 </resources>

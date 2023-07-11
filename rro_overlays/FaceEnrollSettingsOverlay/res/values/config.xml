@@ -16,7 +16,4 @@
 
     <!-- Traffic light package to use -->
     <string name="config_face_enroll_traffic_light_package">com.google.android.settings.future.biometrics.faceenroll</string>
-
-    <!-- Guidence -->
-    <string name="config_face_enroll_guidance_page">com.android.settings/com.google.android.settings.biometrics.face.FaceEnrollFoldPage</string>
 </resources>
