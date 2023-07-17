@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-    
+
 # Quick Tap
 PRODUCT_COPY_FILES += \
     device/google/gs201/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
@@ -33,7 +33,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # Lineage Health
-include hardware/google/pixel/lineage_health/device.mk
+# include hardware/google/pixel/lineage_health/device.mk
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
