@@ -21,7 +21,7 @@ TARGET_KERNEL_EXT_MODULE_ROOT := kernel/google/gs201/private/google-modules
 # TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := false
 
 # Manifests
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/spark/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += \
     device/google/gs201/android.hardware.security.rkp-service.citadel.xml \
     device/google/gs201/manifest_radio_ds.xml
